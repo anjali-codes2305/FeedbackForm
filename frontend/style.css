@@ -1,0 +1,144 @@
+/* ===== Global Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Body ===== */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+    min-height: 100vh;
+    color: #1f2937;
+}
+
+/* ===== Header ===== */
+header {
+    background: linear-gradient(90deg, #1e3a8a, #2563eb);
+    color: #ffffff;
+    padding: 18px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Card Layout ===== */
+.card {
+    background: #ffffff;
+    max-width: 520px;
+    margin: 50px auto;
+    padding: 28px;
+    border-radius: 14px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* ===== Headings ===== */
+.card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1e3a8a;
+    font-size: 22px;
+}
+
+/* ===== Inputs & Textarea ===== */
+input,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* ===== Button ===== */
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #2563eb, #1e40af);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(37, 99, 235, 0.35);
+}
+
+/* ===== Response Message ===== */
+#response {
+    margin-top: 14px;
+    text-align: center;
+    font-size: 14px;
+    color: #16a34a;
+    font-weight: 500;
+}
+
+/* ===== Table (Admin Panel) ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+thead {
+    background: #1e3a8a;
+    color: #ffffff;
+}
+
+th,
+td {
+    padding: 10px 12px;
+    border: 1px solid #e5e7eb;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background: #f9fafb;
+}
+
+tbody tr:hover {
+    background: #eef2ff;
+}
+
+/* ===== Animation ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+    .card {
+        margin: 30px 16px;
+        padding: 22px;
+    }
+
+    header {
+        font-size: 20px;
+    }
+}
